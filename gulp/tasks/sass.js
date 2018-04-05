@@ -2,6 +2,7 @@ module.exports = () => {
     $.gulp.task('sass', () => {
         return $.gulp.src('src/static/sass/main.scss')
           .pipe($.plugins.sourcemaps.init())
+          .pipe($.plugins.plumber())
           .pipe($.plugins.sass())
           .pipe($.plugins.cssimport())
           .pipe($.plugins.autoprefixer({
