@@ -8,7 +8,7 @@
     "normalize.css": "^8.0.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.24.1",
+    "browser-sync": "^2.24.4",
     "del": "^3.0.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^5.0.0",
