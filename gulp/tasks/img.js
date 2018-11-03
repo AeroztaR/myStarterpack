@@ -6,12 +6,22 @@ module.exports = () => {
 
     $.gulp.task('img:build', () => {
         return $.gulp.src('src/static/img/**/*')
-        .pipe($.plugins.imagemin({
-            interlaced: true,
-            progressive: true,
-            svgoPlagins: [{removeViewBox: false}],
-            use: [$.pngquant()]
-        }))
+        .pipe($.plugins.imagemin([
+            $.plugins.imagemin.gifsicle({interlaced: true}),
+            $.plugins.imagemin.jpegtran({progressive: true}),
+            $.plugins.imagemin.optipng({optimizationLevel: 3}),
+            $.plugins.imagemin.svgo({
+                plugins: [
+                    {removeViewBox: true},
+                    {cleanupIDs: false}
+                ]
+            })
+        ]))
+        // .pipe($.plugins.webp({
+        //     use: [
+        //         $.plugins.webp({quality: 90})
+        //     ]
+        // }))
         .pipe($.gulp.dest('build/static/img'));
     });
 };
