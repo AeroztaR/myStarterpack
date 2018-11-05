@@ -5,6 +5,7 @@ module.exports = () => {
             .pipe($.plugins.pug({
                 pretty: true
             }))
+            .pipe($.plugins.htmlmin({ collapseWhitespace: true }))
             .pipe($.gulp.dest('build'))
             .on('end', $.browserSync.reload);
     })
