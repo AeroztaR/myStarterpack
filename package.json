@@ -27,7 +27,7 @@
     "gulp-svg-sprite": "^1.5.0",
     "gulp-svgmin": "^2.1.0",
     "gulp-uglify-es": "^1.0.4",
-    "gulp-webp": "^4.0.0",
+    "gulp-webp": "^4.0.1",
     "imagemin-pngquant": "^7.0.0"
   },
   "scripts": {
