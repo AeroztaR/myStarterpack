@@ -6,7 +6,7 @@ module.exports = () => {
           .pipe($.plugins.sass())
           .pipe($.plugins.cssimport())
           .pipe($.plugins.autoprefixer({
-            browsers: ['last 2 versions'],
+            overrideBrowserslist: ['last 2 versions'],
             cascade: false
           }))
           .pipe($.plugins.csso())
