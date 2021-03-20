@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "jquery": "^3.5.1",
+    "jquery": "^3.6.0",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -18,7 +18,7 @@
     "gulp-csso": "^4.0.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
-    "gulp-load-plugins": "^2.0.5",
+    "gulp-load-plugins": "^2.0.6",
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^4.0.1",
     "gulp-replace": "^1.0.0",
@@ -28,7 +28,7 @@
     "gulp-svgmin": "^3.0.0",
     "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
-    "imagemin-pngquant": "^9.0.1"
+    "imagemin-pngquant": "^9.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
